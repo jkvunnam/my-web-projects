@@ -1,0 +1,47 @@
+@keyframes enlarge {
+    0%, 100%{
+        transform: scale(o.25);
+    }
+    25%{
+
+        transform: scale(0.5);
+    }
+    50%{
+        transform:scale(0.75);
+    }
+    75%{
+        transform: scale(1);
+    }
+    
+}
+
+.div1{
+    height:200px;
+    width:800px;
+    text-align: center;
+    background-color: aqua;
+}
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    display: inline-block;
+    margin:50px;
+}
+.box1, .box2, .box3{
+    animation-name: enlarge;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.box1{
+    animation-delay: 0.25s;
+}
+.box2{
+    animation-delay: 0.5s;
+}
+.box3{
+    animation-delay: 0.75s;
+}

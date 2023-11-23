@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <style>
+        .redText{
+            color: rgb(239, 8, 8);
+        }
+
+        #heading{
+            color: yellow;
+        }
+        #background-div{
+            background-color: burlywood;
+                height: 500px;
+                width: 60%; 
+                text-align: center;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="background-div">
+                <h1 class="redText" id="heading" style="color: black;">My Application Form</h1>
+        <form action="\" method="get">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" name="name" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age</label></td>
+                        <td><input type="number" name="age" id="age" min="18" max="50"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email ">Email</label></td>
+                        <td><input type="email" name="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label >Gender</label></td>
+                        <td><input type="radio" name="gender" id="male">Male
+                            <input type="radio" name="gender" id="female">Female</td>
+                    </tr>
+                    <tr>
+                        <td><label for="Occupation">Occupation</label></td>
+                        <td><select name="occupation" id="occupation">
+                            <option value="Student">Student</option>
+                            <option value="Part-time">Part-time</option>
+                            <option value="full-time">Fulltime</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td><label for="abot">About you</label></td>
+                        <td><textarea name="about" id="about" cols="30" rows="6"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;"><input type="checkbox" name="tac" id="tac"></td>
+                        <td><label for="tac">Please tick on Terms and Conditions</label></td>
+                    </tr>
+                    <tr>
+                        <td><button type="reset">Reset</button></td>
+                        <td style="text-align: right;"><button type="submit">Submit</button></td>
+                    </tr>
+
+                    
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
